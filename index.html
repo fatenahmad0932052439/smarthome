@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomeSmart — Smart Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">🏠 HomeSmart</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="btn-signup">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="home">
+    <div class="container hero-content">
+      <h1>Your Smart Home Starts Here</h1>
+      <p>Control everything in your home from one place — lighting, climate, security, and more.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+        <a href="#features" class="btn btn-outline">Learn More</a>
+      </div>
+      <img 
+        src="https://images.unsplash.com/photo-1558002038-1055907df827?w=900&h=450&fit=crop" 
+        alt="Smart Home" 
+        class="hero-img"
+      />
+    </div>
+  </header>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us?</h2>
+      <p class="section-subtitle">Three reasons that make us the #1 choice for your smart home</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Safe</h3>
+          <p>Our products are secure and private out-of-the-box with top-tier security standards.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Efficient</h3>
+          <p>Feel good about your wallet and the environment with energy-saving smart systems.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">✅</div>
+          <h3>Proven</h3>
+          <p>Leading the Smart Home world for over 10 years with thousands of happy customers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PARTNERS ===== -->
+  <section class="partners" id="partners">
+    <div class="container">
+      <h2 class="section-title">Our Partners</h2>
+      <p class="section-subtitle">We've partnered with hundreds of smart home brands to help you create a smart home that fits your needs.</p>
+
+      <div class="partners-grid">
+        <div class="partner-card"><img src="https://placehold.co/100x100/fbbf24/ffffff?text=1" alt="Partner 1"></div>
+        <div class="partner-card"><img src="https://placehold.co/100x100/fbbf24/ffffff?text=2" alt="Partner 2"></div>
+        <div class="partner-card"><img src="https://placehold.co/100x100/fbbf24/ffffff?text=3" alt="Partner 3"></div>
+        <div class="partner-card"><img src="https://placehold.co/100x100/fbbf24/ffffff?text=4" alt="Partner 4"></div>
+        <div class="partner-card"><img src="https://placehold.co/100x100/fbbf24/ffffff?text=5" alt="Partner 5"></div>
+        <div class="partner-card"><img src="https://placehold.co/100x100/fbbf24/ffffff?text=6" alt="Partner 6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RELAX SECTION ===== -->
+  <section class="relax">
+    <div class="container relax-content">
+      <div class="relax-text">
+        <h2>Relax, you're home!</h2>
+        <p>All our supported hardware includes traditional inputs so you can integrate our products into your house in a way that's best for everyone.</p>
+        <ul class="relax-list">
+          <li>✅ Smart lighting control</li>
+          <li>✅ Camera monitoring</li>
+          <li>✅ Climate management</li>
+          <li>✅ Smart locks</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Sign Up</a>
+      </div>
+      <img 
+        src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=500&fit=crop" 
+        alt="Living Room" 
+        class="relax-img"
+      />
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat">
+        <h3>10+</h3>
+        <p>Years of Experience</p>
+      </div>
+      <div class="stat">
+        <h3>50K+</h3>
+        <p>Happy Customers</p>
+      </div>
+      <div class="stat">
+        <h3>200+</h3>
+        <p>Business Partners</p>
+      </div>
+      <div class="stat">
+        <h3>24/7</h3>
+        <p>Customer Support</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title light">Let's Connect</h2>
+      <p class="section-subtitle light">We'll get back to you as soon as possible</p>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" rows="5" placeholder="How can we help?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-dark full-width">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h4>🏠 HomeSmart</h4>
+        <p>Building smart homes that fit your life.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#partners">Partners</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>📧 info@homesmart.com</li>
+          <li>📱 +1 (555) 000-0000</li>
+          <li>📍 New York, USA</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 HomeSmart. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
