@@ -4,197 +4,228 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HomeSmart — Smart Home</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-900 font-sans">
 
   <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="#" class="logo">🏠 HomeSmart</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#partners">Partners</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#" class="btn-signup">Sign Up</a></li>
+  <nav class="bg-amber-400 py-4 shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-5 flex justify-between items-center flex-wrap">
+      <a href="#" class="text-2xl font-bold text-gray-900">🏠 HomeSmart</a>
+
+      <button id="menuBtn" class="md:hidden text-3xl text-gray-900 focus:outline-none" aria-label="Menu">☰</button>
+
+      <ul id="navLinks" class="hidden md:flex gap-6 items-center w-full md:w-auto mt-4 md:mt-0 flex-col md:flex-row">
+        <li><a href="#home" class="text-gray-900 font-medium hover:text-gray-600 transition">Home</a></li>
+        <li><a href="#features" class="text-gray-900 font-medium hover:text-gray-600 transition">Features</a></li>
+        <li><a href="#partners" class="text-gray-900 font-medium hover:text-gray-600 transition">Partners</a></li>
+        <li><a href="#contact" class="text-gray-900 font-medium hover:text-gray-600 transition">Contact</a></li>
+        <li><a href="#" class="bg-teal-900 text-white px-6 py-2 rounded-xl shadow-md hover:bg-teal-800 transition">Sign Up</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- ===== HERO ===== -->
-  <header class="hero" id="home">
-    <div class="container hero-content">
-      <h1>Your Smart Home Starts Here</h1>
-      <p>Control everything in your home from one place — lighting, climate, security, and more.</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">Get Started</a>
-        <a href="#features" class="btn btn-outline">Learn More</a>
+  <header id="home" class="bg-gradient-to-b from-amber-400 to-amber-600 py-16">
+    <div class="max-w-6xl mx-auto px-5 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Your Smart Home Starts Here</h1>
+      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-gray-700">
+        Control everything in your home from one place — lighting, climate, security, and more.
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap mb-12">
+        <a href="#contact" class="bg-amber-400 text-gray-900 px-8 py-3 rounded-xl font-bold shadow-md hover:bg-amber-500 hover:shadow-none transition">Get Started</a>
+        <a href="#features" class="border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-xl font-bold hover:bg-gray-900 hover:text-white transition">Learn More</a>
       </div>
       <img 
         src="https://images.unsplash.com/photo-1558002038-1055907df827?w=900&h=450&fit=crop" 
         alt="Smart Home" 
-        class="hero-img"
+        class="rounded-xl shadow-2xl mx-auto max-w-3xl w-full"
       />
     </div>
   </header>
 
   <!-- ===== FEATURES ===== -->
-  <section class="features" id="features">
-    <div class="container">
-      <h2 class="section-title">Why Choose Us?</h2>
-      <p class="section-subtitle">Three reasons that make us the #1 choice for your smart home</p>
+  <section id="features" class="py-16">
+    <div class="max-w-6xl mx-auto px-5">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-3">Why Choose Us?</h2>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        Three reasons that make us the #1 choice for your smart home
+      </p>
 
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🔒</div>
-          <h3>Safe</h3>
-          <p>Our products are secure and private out-of-the-box with top-tier security standards.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-md text-center hover:-translate-y-1 hover:shadow-xl transition">
+          <div class="text-5xl mb-4">🔒</div>
+          <h3 class="text-2xl font-bold mb-3">Safe</h3>
+          <p class="text-gray-600">Our products are secure and private out-of-the-box with top-tier security standards.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon">⚡</div>
-          <h3>Efficient</h3>
-          <p>Feel good about your wallet and the environment with energy-saving smart systems.</p>
+        <div class="bg-white p-8 rounded-xl shadow-md text-center hover:-translate-y-1 hover:shadow-xl transition">
+          <div class="text-5xl mb-4">⚡</div>
+          <h3 class="text-2xl font-bold mb-3">Efficient</h3>
+          <p class="text-gray-600">Feel good about your wallet and the environment with energy-saving smart systems.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon">✅</div>
-          <h3>Proven</h3>
-          <p>Leading the Smart Home world for over 10 years with thousands of happy customers.</p>
+        <div class="bg-white p-8 rounded-xl shadow-md text-center hover:-translate-y-1 hover:shadow-xl transition">
+          <div class="text-5xl mb-4">✅</div>
+          <h3 class="text-2xl font-bold mb-3">Proven</h3>
+          <p class="text-gray-600">Leading the Smart Home world for over 10 years with thousands of happy customers.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===== PARTNERS ===== -->
-  <section class="partners" id="partners">
-    <div class="container">
-      <h2 class="section-title">Our Partners</h2>
-      <p class="section-subtitle">We've partnered with hundreds of smart home brands to help you create a smart home that fits your needs.</p>
+  <section id="partners" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-5">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-3">Our Partners</h2>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        We've partnered with hundreds of smart home brands to help you create a smart home that fits your needs.
+      </p>
 
-      <div class="partners-grid">
-        <div class="partner-card"><img src="https://placehold.co/100x100/fbbf24/ffffff?text=1" alt="Partner 1"></div>
-        <div class="partner-card"><img src="https://placehold.co/100x100/fbbf24/ffffff?text=2" alt="Partner 2"></div>
-        <div class="partner-card"><img src="https://placehold.co/100x100/fbbf24/ffffff?text=3" alt="Partner 3"></div>
-        <div class="partner-card"><img src="https://placehold.co/100x100/fbbf24/ffffff?text=4" alt="Partner 4"></div>
-        <div class="partner-card"><img src="https://placehold.co/100x100/fbbf24/ffffff?text=5" alt="Partner 5"></div>
-        <div class="partner-card"><img src="https://placehold.co/100x100/fbbf24/ffffff?text=6" alt="Partner 6"></div>
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-4 max-w-3xl mx-auto">
+        <div class="p-4 bg-white rounded-xl shadow-md flex justify-center items-center hover:scale-105 transition">
+          <img src="https://placehold.co/100x100/fbbf24/ffffff?text=1" alt="Partner 1" class="rounded-lg">
+        </div>
+        <div class="p-4 bg-white rounded-xl shadow-md flex justify-center items-center hover:scale-105 transition">
+          <img src="https://placehold.co/100x100/fbbf24/ffffff?text=2" alt="Partner 2" class="rounded-lg">
+        </div>
+        <div class="p-4 bg-white rounded-xl shadow-md flex justify-center items-center hover:scale-105 transition">
+          <img src="https://placehold.co/100x100/fbbf24/ffffff?text=3" alt="Partner 3" class="rounded-lg">
+        </div>
+        <div class="p-4 bg-white rounded-xl shadow-md flex justify-center items-center hover:scale-105 transition">
+          <img src="https://placehold.co/100x100/fbbf24/ffffff?text=4" alt="Partner 4" class="rounded-lg">
+        </div>
+        <div class="p-4 bg-white rounded-xl shadow-md flex justify-center items-center hover:scale-105 transition">
+          <img src="https://placehold.co/100x100/fbbf24/ffffff?text=5" alt="Partner 5" class="rounded-lg">
+        </div>
+        <div class="p-4 bg-white rounded-xl shadow-md flex justify-center items-center hover:scale-105 transition">
+          <img src="https://placehold.co/100x100/fbbf24/ffffff?text=6" alt="Partner 6" class="rounded-lg">
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===== RELAX SECTION ===== -->
-  <section class="relax">
-    <div class="container relax-content">
-      <div class="relax-text">
-        <h2>Relax, you're home!</h2>
-        <p>All our supported hardware includes traditional inputs so you can integrate our products into your house in a way that's best for everyone.</p>
-        <ul class="relax-list">
-          <li>✅ Smart lighting control</li>
-          <li>✅ Camera monitoring</li>
-          <li>✅ Climate management</li>
-          <li>✅ Smart locks</li>
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Relax, you're home!</h2>
+        <p class="text-gray-600 text-lg mb-6">
+          All our supported hardware includes traditional inputs so you can integrate our products into your house in a way that's best for everyone.
+        </p>
+        <ul class="mb-8 space-y-2">
+          <li class="text-gray-700 text-lg">✅ Smart lighting control</li>
+          <li class="text-gray-700 text-lg">✅ Camera monitoring</li>
+          <li class="text-gray-700 text-lg">✅ Climate management</li>
+          <li class="text-gray-700 text-lg">✅ Smart locks</li>
         </ul>
-        <a href="#contact" class="btn btn-primary">Sign Up</a>
+        <a href="#contact" class="inline-block bg-amber-400 text-gray-900 px-8 py-3 rounded-xl font-bold shadow-md hover:bg-amber-500 hover:shadow-none transition">Sign Up</a>
       </div>
       <img 
         src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=500&fit=crop" 
         alt="Living Room" 
-        class="relax-img"
+        class="rounded-xl shadow-2xl w-full"
       />
     </div>
   </section>
 
   <!-- ===== STATS ===== -->
-  <section class="stats">
-    <div class="container stats-grid">
-      <div class="stat">
-        <h3>10+</h3>
-        <p>Years of Experience</p>
+  <section class="bg-teal-900 py-12 text-white">
+    <div class="max-w-6xl mx-auto px-5 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <h3 class="text-4xl md:text-5xl font-bold text-amber-400 mb-2">10+</h3>
+        <p class="text-gray-300">Years of Experience</p>
       </div>
-      <div class="stat">
-        <h3>50K+</h3>
-        <p>Happy Customers</p>
+      <div>
+        <h3 class="text-4xl md:text-5xl font-bold text-amber-400 mb-2">50K+</h3>
+        <p class="text-gray-300">Happy Customers</p>
       </div>
-      <div class="stat">
-        <h3>200+</h3>
-        <p>Business Partners</p>
+      <div>
+        <h3 class="text-4xl md:text-5xl font-bold text-amber-400 mb-2">200+</h3>
+        <p class="text-gray-300">Business Partners</p>
       </div>
-      <div class="stat">
-        <h3>24/7</h3>
-        <p>Customer Support</p>
+      <div>
+        <h3 class="text-4xl md:text-5xl font-bold text-amber-400 mb-2">24/7</h3>
+        <p class="text-gray-300">Customer Support</p>
       </div>
     </div>
   </section>
 
   <!-- ===== CONTACT ===== -->
-  <section class="contact" id="contact">
-    <div class="container contact-container">
-      <h2 class="section-title light">Let's Connect</h2>
-      <p class="section-subtitle light">We'll get back to you as soon as possible</p>
+  <section id="contact" class="py-16 bg-teal-900">
+    <div class="max-w-2xl mx-auto px-5">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-3">Let's Connect</h2>
+      <p class="text-center text-gray-300 mb-12">We'll get back to you as soon as possible</p>
 
-      <form class="contact-form">
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" placeholder="Enter your name" required>
+      <form class="bg-white p-8 rounded-xl shadow-2xl space-y-6">
+        <div>
+          <label for="name" class="block font-bold mb-2 text-gray-900">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required
+            class="w-full px-4 py-3 border-2 border-amber-400 rounded-xl focus:outline-none focus:border-amber-600 focus:ring-4 focus:ring-amber-200 transition">
         </div>
 
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" placeholder="example@email.com" required>
+        <div>
+          <label for="email" class="block font-bold mb-2 text-gray-900">Email Address</label>
+          <input type="email" id="email" placeholder="example@email.com" required
+            class="w-full px-4 py-3 border-2 border-amber-400 rounded-xl focus:outline-none focus:border-amber-600 focus:ring-4 focus:ring-amber-200 transition">
         </div>
 
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+        <div>
+          <label for="phone" class="block font-bold mb-2 text-gray-900">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+1 (555) 000-0000"
+            class="w-full px-4 py-3 border-2 border-amber-400 rounded-xl focus:outline-none focus:border-amber-600 focus:ring-4 focus:ring-amber-200 transition">
         </div>
 
-        <div class="form-group">
-          <label for="message">Your Message</label>
-          <textarea id="message" rows="5" placeholder="How can we help?" required></textarea>
+        <div>
+          <label for="message" class="block font-bold mb-2 text-gray-900">Your Message</label>
+          <textarea id="message" rows="5" placeholder="How can we help?" required
+            class="w-full px-4 py-3 border-2 border-amber-400 rounded-xl focus:outline-none focus:border-amber-600 focus:ring-4 focus:ring-amber-200 transition resize-y"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-dark full-width">Send Message</button>
+        <button type="submit" class="w-full bg-gray-900 text-white py-3 rounded-xl font-bold shadow-md hover:bg-gray-700 hover:shadow-none transition">
+          Send Message
+        </button>
       </form>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-col">
-        <h4>🏠 HomeSmart</h4>
-        <p>Building smart homes that fit your life.</p>
+  <footer class="bg-gray-900 text-white pt-12">
+    <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8">
+      <div>
+        <h4 class="text-amber-400 text-xl font-bold mb-4">🏠 HomeSmart</h4>
+        <p class="text-gray-300">Building smart homes that fit your life.</p>
       </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#partners">Partners</a></li>
+      <div>
+        <h4 class="text-amber-400 text-xl font-bold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="#home" class="hover:text-amber-400 transition">Home</a></li>
+          <li><a href="#features" class="hover:text-amber-400 transition">Features</a></li>
+          <li><a href="#partners" class="hover:text-amber-400 transition">Partners</a></li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
+      <div>
+        <h4 class="text-amber-400 text-xl font-bold mb-4">Contact</h4>
+        <ul class="space-y-2 text-gray-300">
           <li>📧 info@homesmart.com</li>
           <li>📱 +1 (555) 000-0000</li>
           <li>📍 New York, USA</li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="border-t border-gray-700 py-6 text-center text-gray-400">
       <p>© 2026 HomeSmart. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- ===== JAVASCRIPT (Mobile Menu) ===== -->
   <script>
     const menuBtn = document.getElementById('menuBtn');
     const navLinks = document.getElementById('navLinks');
     menuBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+      navLinks.classList.toggle('hidden');
+      navLinks.classList.toggle('flex');
     });
   </script>
 
